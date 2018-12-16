@@ -1,2 +1,2 @@
 # numbers-backend
-Backend to numbers game
+Backend to numbers game (mwbouwkamp/numbers-game)
