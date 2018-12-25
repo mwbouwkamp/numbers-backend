@@ -13,12 +13,13 @@ import java.util.concurrent.TimeUnit;
 public class UpdateThread extends Thread {
 
     private boolean running;
+    private static final int WAIT_TIME = 15;
 
     @Override
     public void run() {
         while (running) {
             try {
-                TimeUnit.MINUTES.sleep(1);
+                TimeUnit.SECONDS.sleep(WAIT_TIME);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -57,9 +58,14 @@ public class UpdateThread extends Thread {
         }
         JSONObject successfullyUpdatedLevelsJson = NetworkUtils.updateLevelAverageTime(NetworkUtils.NetworkContract.LevelData.TABLE_NAME, completedLevelsToUpdateJson);
         JSONObject successFullyDeletedLevelsJson = NetworkUtils.deleteLevels(NetworkUtils.NetworkContract.CompletedLevelData.TABLE_NAME, successfullyUpdatedLevelsJson);
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-        System.out.println("TIMESTAMP: " + dtf.format(now) + " UPDATED: " + successFullyDeletedLevelsJson);
+        if (!successFullyDeletedLevelsJson.toString().equals("{}")) {
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+            LocalDateTime now = LocalDateTime.now();
+            System.out.println("TIMESTAMP: " + dtf.format(now) + " UPDATED: " + successFullyDeletedLevelsJson);
+        }
+        else {
+            System.out.println(".");
+        }
     }
 
 }
