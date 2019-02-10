@@ -14,5 +14,14 @@
     <orderEntry type="library" exported="" name="libs" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20180813" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.5" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: nl.limakajo:nl.limakajo.numbers.lib:1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../numbers-lib/out/artifacts/numbers_lib_jar/numbers-lib.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
