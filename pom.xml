@@ -31,9 +31,7 @@
             <artifactId>nl.limakajo.numbers.lib</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>
-                D:/programming/PROJECTS/Numbers/numbers-lib/out/artifacts/numbers_lib_jar/numbers-lib.jar
-            </systemPath>
+            <systemPath>D:/programming/PROJECTS/Numbers/numbers-lib/out/artifacts/numbers_lib_jar/numbers-lib.jar</systemPath>
         </dependency>
 
     </dependencies>
