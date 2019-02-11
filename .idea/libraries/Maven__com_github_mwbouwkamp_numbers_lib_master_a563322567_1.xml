@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.mwbouwkamp:numbers-lib:master-a563322567-1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/mwbouwkamp/numbers-lib/master-a563322567-1/numbers-lib-master-a563322567-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/mwbouwkamp/numbers-lib/master-a563322567-1/numbers-lib-master-a563322567-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/mwbouwkamp/numbers-lib/master-a563322567-1/numbers-lib-master-a563322567-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
