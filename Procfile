@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -p port=$PORT -cp target/classes:target/dependency/* nl.limakajo.numbersbackend.Main
+web: java $JAVA_OPTS -Dserver.port=$PORT -cp target/classes:target/dependency/* nl.limakajo.numbersbackend.Main
